@@ -1,0 +1,62 @@
+header {
+  height: 15vw;
+  max-height: 115px;
+  background-color: var(--light);
+  color: var(--primary);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+
+  .header-content {
+    position: relative;
+    max-width: 1119px;
+    margin: auto;
+  }
+
+  .avatar-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--light);
+    border: solid 5vw  var(--light);
+    border-top: solid 3vw  var(--light);
+    border-radius: 0 0 50% 50%;
+    
+    .avatar {
+      width: 10vw;
+      height: 10vw;
+      background-image: url('../avatar.png');
+      background-position: 55% 7px;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      border: solid 4px var(--primary);
+      border-radius: 50%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .avatar-container {
+      border: solid 5vw  var(--light);
+      border-top: solid 23px var(--light);
+      border-bottom: solid 38px var(--light);
+
+      .avatar {
+        width: 77px;
+        height: 77px;
+      }
+    }
+  }
+
+  @media (min-width: 1119px) {
+    .avatar-container {
+      border-left: solid 5vw var(--light);
+      border-right: solid 5vw var(--light);
+      border-radius: 0 0 50% 50%;
+    }
+
+    .header-content {
+      max-width: 975px;
+    }
+  }
+}

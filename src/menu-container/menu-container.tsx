@@ -3,7 +3,7 @@ import './menu-container.scss';
 
 function MenuContainer() {
   const menuItems = [
-    {title: 'Lorem ipsum dolor sit amet', link: '#'},
+    {title: 'About Me', link: '#'},
     {title: 'Projects', link: '#'},
     {title: 'Templates', link: '#'},
     {title: 'Posts', link: '#'},
@@ -11,7 +11,7 @@ function MenuContainer() {
   ];
 
   return (
-    <div className='menu-container text-end p-2 p-md-5'>
+    <div className='menu-container text-end p-2 pt-5 p-md-5'>
       <ul className='menu-list'>
         {menuItems.map((item) => (
         <li>

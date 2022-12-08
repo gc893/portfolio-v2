@@ -1,6 +1,10 @@
 .menu-container {
-  // 
+  height: 100vh;
+  min-width: 200px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0, 0.1));;
   color: var(--light);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
 
   .menu-list {
     list-style: none;
@@ -12,7 +16,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1119px) {
   .menu-container {
     flex-basis: 50%;
     max-width: 300px;
