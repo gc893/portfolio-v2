@@ -1,0 +1,11 @@
+.content-container {
+  height: 100vh;
+  color: var(--light);
+}
+
+@media (min-width: 768px) {
+  .content-container {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+}

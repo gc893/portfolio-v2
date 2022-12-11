@@ -9,9 +9,35 @@
   .menu-list {
     list-style: none;
 
-    a {
+    .list-item {
+      width: fit-content;
+
+      a {
       color: inherit;
       text-decoration: none;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-color: var(--light);
+      transition: background-color 0.5s;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 4px;
+        background-color: var(--negative);
+        transition: width 0.5s;
+      }
+
+      &:hover::after {
+          width: 100%;
+      }
+    }
+
+    .active {
+        background-color: var(--negative);
+      }
     }
   }
 }
